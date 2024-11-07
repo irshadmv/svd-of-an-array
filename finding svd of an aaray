@@ -1,0 +1,5 @@
+import numpy as np
+a=np.array([[2,0],[5,6]])
+u,s,v=np.linalg.svd(a)
+print(s)
+print(np.shape((abs (s)>0).nonzero())[1])
